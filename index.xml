@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SeduhRasa</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on SeduhRasa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Sep 2024 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black Tea</title>
+      <link>http://localhost:1313/products/hotdrink/blacktea/</link>
+      <pubDate>Sat, 28 Sep 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/blacktea/</guid>
+      <description>This is the full content of Product Item 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Avocado Juice</title>
+      <link>http://localhost:1313/products/cooldrink/avocadojuice/</link>
+      <pubDate>Fri, 30 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/cooldrink/avocadojuice/</guid>
+      <description>This is the full content of Product Item 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Mie Gacoan</title>
+      <link>http://localhost:1313/products/food/miegacoan/</link>
+      <pubDate>Fri, 30 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/miegacoan/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Ice Cincau</title>
+      <link>http://localhost:1313/products/cooldrink/icecincau/</link>
+      <pubDate>Thu, 29 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/cooldrink/icecincau/</guid>
+      <description>This is the full content of Product Item 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Ice Fruit</title>
+      <link>http://localhost:1313/products/cooldrink/icefruit/</link>
+      <pubDate>Thu, 29 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/cooldrink/icefruit/</guid>
+      <description>This is the full content of Product Item 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Lemon Ice</title>
+      <link>http://localhost:1313/products/cooldrink/lemon-ice/</link>
+      <pubDate>Mon, 26 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/cooldrink/lemon-ice/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Indomie Goreng</title>
+      <link>http://localhost:1313/products/food/indomie/</link>
+      <pubDate>Sat, 24 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/indomie/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Ketoprak</title>
+      <link>http://localhost:1313/products/food/ketoprak/</link>
+      <pubDate>Sat, 24 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/ketoprak/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Watermelon Ice</title>
+      <link>http://localhost:1313/products/cooldrink/watermelonice/</link>
+      <pubDate>Sat, 24 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/cooldrink/watermelonice/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Green Tea</title>
+      <link>http://localhost:1313/products/hotdrink/greentea/</link>
+      <pubDate>Thu, 22 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/greentea/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Americano</title>
+      <link>http://localhost:1313/products/hotdrink/americano/</link>
+      <pubDate>Tue, 20 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/americano/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Wedang Jahe</title>
+      <link>http://localhost:1313/products/hotdrink/wedangjahe/</link>
+      <pubDate>Thu, 18 Jul 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/wedangjahe/</guid>
+      <description>This is the full content of Product Item 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Testimonial 7</title>
+      <link>http://localhost:1313/testimonials/testi-7/</link>
+      <pubDate>Tue, 23 Apr 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-7/</guid>
+      <description>This café truly has a unique atmosphere. Beyond the amazing coffee, events like history talks and poetry readings make it such an inspiring place.</description>
+    </item>
+    <item>
+      <title>Testimonial 8</title>
+      <link>http://localhost:1313/testimonials/testi-8/</link>
+      <pubDate>Tue, 23 Apr 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-8/</guid>
+      <description>This place is more than just a café. Every visit brings a new experience, from insightful discussions to soothing live music.</description>
+    </item>
+    <item>
+      <title>Testimonial 9</title>
+      <link>http://localhost:1313/testimonials/testi-9/</link>
+      <pubDate>Tue, 23 Apr 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-9/</guid>
+      <description>This café is truly a hidden gem. Each visit feels unique, with engaging conversations and calming live performances. It&amp;rsquo;s the perfect spot for me to either focus on work or unwind with good company.</description>
+    </item>
+    <item>
+      <title>Exploring the World of Single-Origin Coffee at SeduhRasa</title>
+      <link>http://localhost:1313/news/post-4/</link>
+      <pubDate>Mon, 15 Apr 2024 22:00:00 -0740</pubDate>
+      <guid>http://localhost:1313/news/post-4/</guid>
+      <description>Unveiling the Richness of Single-Origin Coffee at SeduhRasa&#xA;Mark your calendars for an exciting journey into the world of single-origin coffee, where we’ll explore how geography, climate, and cultivation techniques come together to create distinctive flavors.</description>
+    </item>
+    <item>
+      <title>Testimonial 6</title>
+      <link>http://localhost:1313/testimonials/testi-6/</link>
+      <pubDate>Wed, 21 Feb 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-6/</guid>
+      <description>The atmosphere is cozy, and the customer service is really friendly. Definitely a great spot to hang out.</description>
+    </item>
+    <item>
+      <title>Testimonial 5</title>
+      <link>http://localhost:1313/testimonials/testi-5/</link>
+      <pubDate>Mon, 19 Feb 2024 10:00:00 -0800</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-5/</guid>
+      <description>My favorite place for literary and musical events. There’s always something new to enjoy here.</description>
+    </item>
+    <item>
+      <title>Testimonial 4</title>
+      <link>http://localhost:1313/testimonials/testi-4/</link>
+      <pubDate>Mon, 19 Feb 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-4/</guid>
+      <description>Great food, refreshing cold drinks, and the ambiance takes me back in time.</description>
+    </item>
+    <item>
+      <title>Testimonial 3</title>
+      <link>http://localhost:1313/testimonials/testi-3/</link>
+      <pubDate>Sun, 18 Feb 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-3/</guid>
+      <description>A perfect spot for working or unwinding. Their coffee is top-notch, and the food selection is amazing.</description>
+    </item>
+    <item>
+      <title>Testimonial 2</title>
+      <link>http://localhost:1313/testimonials/testi-2/</link>
+      <pubDate>Sat, 17 Feb 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-2/</guid>
+      <description>The events here are always fascinating. History talks and poetry readings make this place more than just a café.</description>
+    </item>
+    <item>
+      <title>Testimonial 1</title>
+      <link>http://localhost:1313/testimonials/testi-1/</link>
+      <pubDate>Fri, 16 Feb 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/testimonials/testi-1/</guid>
+      <description>A unique atmosphere and incredible coffee! This is my go-to place for relaxing while learning about history.</description>
+    </item>
+    <item>
+      <title>How to Enjoy Traditional Coffee at SeduhRasa</title>
+      <link>http://localhost:1313/news/post-3/</link>
+      <pubDate>Sat, 20 Jan 2024 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/news/post-3/</guid>
+      <description>Brew the Perfect Traditional Coffee at Home with SeduhRasa&#xA;Craving that authentic SeduhRasa coffee experience at home? You’re in luck!</description>
+    </item>
+    <item>
+      <title>Capucino</title>
+      <link>http://localhost:1313/products/hotdrink/capucino/</link>
+      <pubDate>Wed, 19 Jul 2023 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/capucino/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>This Week’s Event: History Talk on &#34;The Journey to Indonesian Independence&#34;</title>
+      <link>http://localhost:1313/news/post-2/</link>
+      <pubDate>Fri, 17 Feb 2023 10:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/news/post-2/</guid>
+      <description>This week, we invite you to a captivating discussion that will take us back to a crucial moment in our nation&amp;rsquo;s history.</description>
+    </item>
+    <item>
+      <title>Next Event: The Art of Traditional Coffee Brewing</title>
+      <link>http://localhost:1313/news/post-1/</link>
+      <pubDate>Thu, 16 Feb 2023 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/news/post-1/</guid>
+      <description>Mark your calendar for March 20, 2023, as SeduhRasa presents a special event dedicated to the art of traditional coffee brewing.</description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>SeduhRasa was founded with a mission to serve Indonesia’s finest coffee while recreating the cozy, welcoming ambiance of vintage coffeehouses.</description>
+    </item>
+    <item>
+      <title>Discussion</title>
+      <link>http://localhost:1313/tags/discusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/discusion/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

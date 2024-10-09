@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animation with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+
+
+
+    <svg width="200" height="200" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_8965_3881)">
+            <circle cx="10" cy="10" r="10" fill="#2BB36C" class="circle" />
+            <path d="M4 9.0625L8.15385 13L16 6" stroke="white" stroke-width="2.5" class="check" />
+        </g>
+        <defs>
+            <clipPath id="clip0_8965_3881">
+                <rect width="20" height="20" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+
+
+    <style>
+        .circle {
+            transform: scale(0);
+            transform-origin: center;
+            animation: circle-grow 0.5s forwards;
+        }
+
+        .check {
+            stroke-dasharray: 22;
+            /* Total length of the checkmark path */
+            stroke-dashoffset: 22;
+            /* Start fully hidden */
+            animation: check-draw 0.5s forwards 0.5s;
+        }
+
+        @keyframes circle-grow {
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes check-draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
