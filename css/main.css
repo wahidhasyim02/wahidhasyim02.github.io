@@ -2810,14 +2810,6 @@ input[type="checkbox"]:checked:focus {
     height: 100% !important;
   }
 
-  .sm\:h-\[600px\] {
-    height: 600px !important;
-  }
-
-  .sm\:h-\[500px\] {
-    height: 500px !important;
-  }
-
   .sm\:w-\[250px\] {
     width: 250px !important;
   }
