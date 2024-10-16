@@ -2575,6 +2575,11 @@ input[type="checkbox"]:checked:focus {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
+.dark\:bg-red-700:is(.dark *) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity)) !important;
+}
+
 .dark\:bg-gradient-to-tr:is(.dark *) {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops)) !important;
 }
