@@ -925,14 +925,6 @@ input[type="checkbox"]:checked:focus {
   top: 8rem !important;
 }
 
-.top-4 {
-  top: 1rem !important;
-}
-
-.top-12 {
-  top: 3rem !important;
-}
-
 .z-10 {
   z-index: 10 !important;
 }
@@ -1005,16 +997,12 @@ input[type="checkbox"]:checked:focus {
   margin-top: 9rem !important;
 }
 
-.mt-6 {
-  margin-top: 1.5rem !important;
-}
-
 .mt-4 {
   margin-top: 1rem !important;
 }
 
-.mt-12 {
-  margin-top: 3rem !important;
+.mt-6 {
+  margin-top: 1.5rem !important;
 }
 
 .block {
@@ -1073,8 +1061,12 @@ input[type="checkbox"]:checked:focus {
   height: 200px !important;
 }
 
-.h-\[50\%\] {
-  height: 50% !important;
+.h-\[300px\] {
+  height: 300px !important;
+}
+
+.h-\[400px\] {
+  height: 400px !important;
 }
 
 .h-\[500px\] {
@@ -1108,18 +1100,6 @@ input[type="checkbox"]:checked:focus {
 
 .h-screen {
   height: 100vh !important;
-}
-
-.h-\[400px\] {
-  height: 400px !important;
-}
-
-.h-\[300px\] {
-  height: 300px !important;
-}
-
-.h-\[60\%\] {
-  height: 60% !important;
 }
 
 .max-h-screen {
@@ -1716,10 +1696,6 @@ input[type="checkbox"]:checked:focus {
   padding: 1px !important;
 }
 
-.p-12 {
-  padding: 3rem !important;
-}
-
 .px-1 {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
@@ -1784,6 +1760,10 @@ input[type="checkbox"]:checked:focus {
   padding-bottom: 3rem !important;
 }
 
+.pl-0 {
+  padding-left: 0px !important;
+}
+
 .pl-10 {
   padding-left: 2.5rem !important;
 }
@@ -1810,10 +1790,6 @@ input[type="checkbox"]:checked:focus {
 
 .pr-4 {
   padding-right: 1rem !important;
-}
-
-.pl-0 {
-  padding-left: 0px !important;
 }
 
 .text-left {
@@ -2611,11 +2587,6 @@ input[type="checkbox"]:checked:focus {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
-.dark\:bg-blue-700:is(.dark *) {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity)) !important;
-}
-
 .dark\:bg-gradient-to-tr:is(.dark *) {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops)) !important;
 }
@@ -2826,8 +2797,8 @@ input[type="checkbox"]:checked:focus {
     display: none !important;
   }
 
-  .sm\:h-\[300px\] {
-    height: 300px !important;
+  .sm\:h-\[400px\] {
+    height: 400px !important;
   }
 
   .sm\:h-\[450px\] {
@@ -2841,10 +2812,6 @@ input[type="checkbox"]:checked:focus {
 
   .sm\:h-full {
     height: 100% !important;
-  }
-
-  .sm\:h-\[400px\] {
-    height: 400px !important;
   }
 
   .sm\:w-\[250px\] {
@@ -2928,10 +2895,6 @@ input[type="checkbox"]:checked:focus {
   .sm\:px-6 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
-  }
-
-  .sm\:pl-4 {
-    padding-left: 1rem !important;
   }
 
   .sm\:text-start {
