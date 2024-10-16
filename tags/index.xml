@@ -65,6 +65,20 @@
       <description></description>
     </item>
     <item>
+      <title>Event</title>
+      <link>http://localhost:1313/tags/event/</link>
+      <pubDate>Fri, 10 May 2024 20:00:00 -0740</pubDate>
+      <guid>http://localhost:1313/tags/event/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/tags/music/</link>
+      <pubDate>Fri, 10 May 2024 20:00:00 -0740</pubDate>
+      <guid>http://localhost:1313/tags/music/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tutorial</title>
       <link>http://localhost:1313/tags/tutorial/</link>
       <pubDate>Sat, 20 Jan 2024 09:00:00 +0700</pubDate>

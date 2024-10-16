@@ -1866,6 +1866,9 @@
     setInterval(nextTestimonials, intervalTime);
   });
 
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
     const iconMenu = document.getElementById("icon_menu");
     const popupMenu = document.getElementById("popupmenu");
@@ -2245,6 +2248,69 @@
     setupProductSlider(".product-hotdrink", 1, 6000); 
     setupProductSlider(".product-cooldrink", 1, 10000); 
     setupProductSlider(".product-food", 1, 15000); 
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    function setupProductSlider(productClass, itemsPerBatch, intervalTime) {
+      const productItems = document.querySelectorAll(productClass);
+      let currentIndex = 0;
+      const totalItems = productItems.length;
+
+      function showProduct(startIndex) {
+        productItems.forEach((item) => item.classList.add("hidden"));
+        for (let i = 0; i < itemsPerBatch; i++) {
+          const index = (startIndex + i) % totalItems;
+          productItems[index].classList.remove("hidden");
+        }
+      }
+
+      function nextProduct() {
+        currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+        showProduct(currentIndex);
+      }
+
+      showProduct(currentIndex);
+      setInterval(nextProduct, intervalTime);
+    }
+
+    
+    setupProductSlider(".cool-drink", 1, 9000); 
+    setupProductSlider(".hot-drink", 1, 4000); 
+    setupProductSlider(".food-", 1, 13000); 
+  });
+</script>
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("img-cont");
+    const items = Array.from(container.children);
+
+    
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    
+    const shuffledItems = shuffle(items);
+
+    
+    container.innerHTML = '';
+
+    
+    shuffledItems.forEach(item => {
+      container.appendChild(item);
+    });
   });
 </script>
   </footer>

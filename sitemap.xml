@@ -104,6 +104,18 @@
     <loc>http://localhost:1313/products/hotdrink/wedangjahe/</loc>
     <lastmod>2024-07-18T10:00:00+07:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/news/post-5/</loc>
+    <lastmod>2024-05-10T20:00:00-07:40</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/event/</loc>
+    <lastmod>2024-05-10T20:00:00-07:40</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/music/</loc>
+    <lastmod>2024-05-10T20:00:00-07:40</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/news/</loc>
+    <lastmod>2024-05-10T20:00:00-07:40</lastmod>
+  </url><url>
     <loc>http://localhost:1313/testimonials/testi-7/</loc>
     <lastmod>2024-04-23T10:00:00+07:00</lastmod>
   </url><url>
@@ -117,9 +129,6 @@
     <lastmod>2024-04-23T10:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/news/post-4/</loc>
-    <lastmod>2024-04-15T22:00:00-07:40</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/news/</loc>
     <lastmod>2024-04-15T22:00:00-07:40</lastmod>
   </url><url>
     <loc>http://localhost:1313/testimonials/testi-6/</loc>

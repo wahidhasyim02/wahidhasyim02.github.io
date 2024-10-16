@@ -416,11 +416,11 @@
     
     
     
-    <a href="/news/post-4/" title="Exploring the World of Single-Origin Coffee at SeduhRasa"
+    <a href="/news/post-5/" title="Celebrating Music at SeduhRasa: A Night of Melodies and Coffee"
         class="flex cursor-pointer h-[500px] w-full flex-col items-center overflow-hidden rounded-xl backdrop-blur-md odd:bg-white/10 even:bg-white/20 dark:odd:bg-neutral-800/20 dark:even:bg-neutral-800/30">
         <div class="relative h-full w-full overflow-hidden">
             
-            <img src="/images/barista.webp" alt="First image" class="h-full w-full rounded-xl object-cover" />
+            <img src="/images/music_event.webp" alt="First image" class="h-full w-full rounded-xl object-cover" />
             
 
         </div>
@@ -446,17 +446,17 @@
         
         
         
-        <a href="/news/post-4/" title="Exploring the World of Single-Origin Coffee at SeduhRasa"
+        <a href="/news/post-5/" title="Celebrating Music at SeduhRasa: A Night of Melodies and Coffee"
             class="flex cursor-pointer h-[500px] w-full flex-col items-center overflow-hidden rounded-xl backdrop-blur-md odd:bg-white/10 even:bg-white/20 dark:odd:bg-neutral-800/20 dark:even:bg-neutral-800/30">
             <div class="relative h-full w-full overflow-hidden">
                 
-                <img src="/images/barista.webp" alt="Exploring the World of Single-Origin Coffee at SeduhRasa"
+                <img src="/images/music_event.webp" alt="Celebrating Music at SeduhRasa: A Night of Melodies and Coffee"
                     class="h-full w-full rounded-xl object-cover" />
                 
                 <div class="absolute bottom-0 h-full w-full bg-gradient-to-b from-black/0 to-black">
                     <h1
                         class="border-l absolute bottom-10 left-4 sm:left-10 border-yellow-500 pl-2 text-4xl text-left font-semibold text-neutral-100 shadow-lg duration-[100ms] ease-out group-hover:opacity-100 group-hover:transition-opacity group-hover:duration-1000 group-hover:ease-in">
-                        Exploring the World of Single-Origin Coffee at SeduhRasa
+                        Celebrating Music at SeduhRasa: A Night of Melodies and Coffee
                     </h1>
                 </div>
             </div>
@@ -475,6 +475,55 @@
                 
 
                 
+                
+                <div class="flex flex-col lg:flex-row gap-2 w-full h-fit items-start justify-start">
+                    <a href="/news/post-4/"
+                        class="w-full lg:w-[40%] h-[200px] md:h-[180px] lg:h-[160px] bg-cover">
+                        
+                         
+                        
+                        <img src="/images/barista.webp" alt="img-News" class="h-full w-full  rounded object-cover" />
+                         
+                    </a>
+                    <div class="w-full lg:w-[60%] h-fit md:h-[100px] group">
+                        <a href="/news/post-4/"
+                            class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200">
+                            
+                            <h4
+                                class="font-semibold w-full group-hover:text-yellow-600 dark:group-hover:text-yellow-500">
+                                Exploring the World of Single-Origin Coffee at SeduhRasa
+                            </h4>
+                            Unveiling the Richness of Single-Origin Coffee at SeduhRasa
+Mark your calendars for an exciting journey into …<a href="/news/post-4/"
+                                class="mx-2 text-yellow-400 hover:text-yellow-600 dark:hover:text-yellow-500">Read
+                                More</a>
+
+                        </a>
+                        <div class="flex items-center justify-start space-x-2">
+
+                            <div
+                                class="flex divide-x divide-neutral-500 text-sm text-neutral-600 dark:divide-neutral-700">
+                                <div class="pr-2 text-neutral-800 dark:text-neutral-400">
+                                    Elena
+                                </div>
+                                
+                                <div class="hidden md:block">
+                                    
+                                    
+                                    <time class="pl-2" datetime="2024-04-15T22:00:00&#43;07:00">Monday, 15 April 2024 - 10.00 PM</time>
+                                </div>
+
+                                
+                                <div class="block md:hidden">
+                                    
+                                    
+                                    <time class="pl-2" datetime="2024-04-15T22:00:00&#43;07:00">April 15, 2024</time>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="flex flex-col lg:flex-row gap-2 w-full h-fit items-start justify-start">
                     <a href="/news/post-3/"
@@ -1150,6 +1199,9 @@ Craving that authentic SeduhRasa coffee experience …<a href="/news/post-3/"
     setInterval(nextTestimonials, intervalTime);
   });
 
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
     const iconMenu = document.getElementById("icon_menu");
     const popupMenu = document.getElementById("popupmenu");
@@ -1529,6 +1581,69 @@ Craving that authentic SeduhRasa coffee experience …<a href="/news/post-3/"
     setupProductSlider(".product-hotdrink", 1, 6000); 
     setupProductSlider(".product-cooldrink", 1, 10000); 
     setupProductSlider(".product-food", 1, 15000); 
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    function setupProductSlider(productClass, itemsPerBatch, intervalTime) {
+      const productItems = document.querySelectorAll(productClass);
+      let currentIndex = 0;
+      const totalItems = productItems.length;
+
+      function showProduct(startIndex) {
+        productItems.forEach((item) => item.classList.add("hidden"));
+        for (let i = 0; i < itemsPerBatch; i++) {
+          const index = (startIndex + i) % totalItems;
+          productItems[index].classList.remove("hidden");
+        }
+      }
+
+      function nextProduct() {
+        currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+        showProduct(currentIndex);
+      }
+
+      showProduct(currentIndex);
+      setInterval(nextProduct, intervalTime);
+    }
+
+    
+    setupProductSlider(".cool-drink", 1, 9000); 
+    setupProductSlider(".hot-drink", 1, 4000); 
+    setupProductSlider(".food-", 1, 13000); 
+  });
+</script>
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("img-cont");
+    const items = Array.from(container.children);
+
+    
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    
+    const shuffledItems = shuffle(items);
+
+    
+    container.innerHTML = '';
+
+    
+    shuffledItems.forEach(item => {
+      container.appendChild(item);
+    });
   });
 </script>
   </footer>
