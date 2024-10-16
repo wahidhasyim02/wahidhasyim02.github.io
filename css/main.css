@@ -925,6 +925,14 @@ input[type="checkbox"]:checked:focus {
   top: 8rem !important;
 }
 
+.top-4 {
+  top: 1rem !important;
+}
+
+.top-12 {
+  top: 3rem !important;
+}
+
 .z-10 {
   z-index: 10 !important;
 }
@@ -999,6 +1007,14 @@ input[type="checkbox"]:checked:focus {
 
 .mt-6 {
   margin-top: 1.5rem !important;
+}
+
+.mt-4 {
+  margin-top: 1rem !important;
+}
+
+.mt-12 {
+  margin-top: 3rem !important;
 }
 
 .block {
@@ -1092,6 +1108,18 @@ input[type="checkbox"]:checked:focus {
 
 .h-screen {
   height: 100vh !important;
+}
+
+.h-\[400px\] {
+  height: 400px !important;
+}
+
+.h-\[300px\] {
+  height: 300px !important;
+}
+
+.h-\[60\%\] {
+  height: 60% !important;
 }
 
 .max-h-screen {
@@ -1688,6 +1716,10 @@ input[type="checkbox"]:checked:focus {
   padding: 1px !important;
 }
 
+.p-12 {
+  padding: 3rem !important;
+}
+
 .px-1 {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
@@ -1778,6 +1810,10 @@ input[type="checkbox"]:checked:focus {
 
 .pr-4 {
   padding-right: 1rem !important;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
 }
 
 .text-left {
@@ -2575,9 +2611,9 @@ input[type="checkbox"]:checked:focus {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
-.dark\:bg-red-700:is(.dark *) {
+.dark\:bg-blue-700:is(.dark *) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity)) !important;
 }
 
 .dark\:bg-gradient-to-tr:is(.dark *) {
@@ -2807,6 +2843,10 @@ input[type="checkbox"]:checked:focus {
     height: 100% !important;
   }
 
+  .sm\:h-\[400px\] {
+    height: 400px !important;
+  }
+
   .sm\:w-\[250px\] {
     width: 250px !important;
   }
@@ -2890,6 +2930,10 @@ input[type="checkbox"]:checked:focus {
     padding-right: 1.5rem !important;
   }
 
+  .sm\:pl-4 {
+    padding-left: 1rem !important;
+  }
+
   .sm\:text-start {
     text-align: start !important;
   }
@@ -2910,6 +2954,10 @@ input[type="checkbox"]:checked:focus {
 
   .md\:ml-0 {
     margin-left: 0px !important;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px !important;
   }
 
   .md\:block {
@@ -3037,6 +3085,10 @@ input[type="checkbox"]:checked:focus {
        object-fit: cover !important;
   }
 
+  .md\:p-2 {
+    padding: 0.5rem !important;
+  }
+
   .md\:px-4 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
@@ -3049,6 +3101,10 @@ input[type="checkbox"]:checked:focus {
 
   .md\:pl-12 {
     padding-left: 3rem !important;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem !important;
   }
 
   .md\:text-\[42px\] {
