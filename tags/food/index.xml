@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Food on SeduhRasa</title>
+    <link>http://localhost:1313/tags/food/</link>
+    <description>Recent content in Food on SeduhRasa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2024 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rawon</title>
+      <link>http://localhost:1313/products/food/rawon/</link>
+      <pubDate>Tue, 15 Oct 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/rawon/</guid>
+      <description>This is the full content of Product Item 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Mie Gacoan</title>
+      <link>http://localhost:1313/products/food/miegacoan/</link>
+      <pubDate>Fri, 30 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/miegacoan/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Indomie Goreng</title>
+      <link>http://localhost:1313/products/food/indomie/</link>
+      <pubDate>Sat, 24 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/indomie/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Ketoprak</title>
+      <link>http://localhost:1313/products/food/ketoprak/</link>
+      <pubDate>Sat, 24 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/food/ketoprak/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+  </channel>
+</rss>

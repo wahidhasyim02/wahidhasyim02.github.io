@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hot Drinks on SeduhRasa</title>
+    <link>http://localhost:1313/products/hotdrink/</link>
+    <description>Recent content in Hot Drinks on SeduhRasa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Sep 2024 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/products/hotdrink/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black Tea</title>
+      <link>http://localhost:1313/products/hotdrink/blacktea/</link>
+      <pubDate>Sat, 28 Sep 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/blacktea/</guid>
+      <description>This is the full content of Product Item 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Green Tea</title>
+      <link>http://localhost:1313/products/hotdrink/greentea/</link>
+      <pubDate>Thu, 22 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/greentea/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Americano</title>
+      <link>http://localhost:1313/products/hotdrink/americano/</link>
+      <pubDate>Tue, 20 Aug 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/americano/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Wedang Jahe</title>
+      <link>http://localhost:1313/products/hotdrink/wedangjahe/</link>
+      <pubDate>Thu, 18 Jul 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/wedangjahe/</guid>
+      <description>This is the full content of Product Item 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Capucino</title>
+      <link>http://localhost:1313/products/hotdrink/capucino/</link>
+      <pubDate>Wed, 19 Jul 2023 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/products/hotdrink/capucino/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+  Food | SeduhRasa
+</title>
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<link rel="icon" href="/images/favicon.ico" />
+<link rel="icon" href="/images/favicon.ico" sizes="64x64" />
+<link rel="icon" href="/images/favicon.png" sizes="64x64" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="msapplication-square64x64logo" href="/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/images/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+  integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+  rel="stylesheet"
+/>
+
+<script>
+  
+  if (localStorage.getItem("darkMode") === "true") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    var toggleDarkMode = document.getElementById("toggle_dark");
+    var textDarkMode = document.getElementById("text_darkmode");
+
+    
+    function setTheme(isDarkMode) {
+      if (isDarkMode) {
+        document.documentElement.classList.add("dark");
+
+        
+        textDarkMode.classList.add("opacity-0");
+
+        setTimeout(() => {
+          
+          textDarkMode.textContent = "light_mode";
+
+          
+          textDarkMode.classList.remove("opacity-0");
+        }, 500); 
+      } else {
+        document.documentElement.classList.remove("dark");
+
+        
+        textDarkMode.classList.add("opacity-0");
+
+        setTimeout(() => {
+          
+          textDarkMode.textContent = "dark_mode";
+
+          
+          textDarkMode.classList.remove("opacity-0");
+        }, 500); 
+      }
+
+
+    }
+
+    
+    var isDarkMode = localStorage.getItem("darkMode") === "true";
+    setTheme(isDarkMode);
+
+    
+    if (toggleDarkMode) {
+      toggleDarkMode.addEventListener("click", function () {
+        var isDark = document.documentElement.classList.toggle("dark");
+        setTheme(isDark);
+        localStorage.setItem("darkMode", isDark ? "true" : "false"); 
+      });
+    }
+
+    
+    function startProgressBar() {
+      const progressBar = document.getElementById("progress-bar");
+      progressBar.classList.add("finished");
+
+      
+      setTimeout(() => {
+        progressBar.classList.remove("finished");
+        progressBar.classList.add("hidden");
+      }, 2400); 
+    }
+
+    
+    setTimeout(startProgressBar, 0);
+
+    
+    const elements = document.querySelectorAll(".fade");
+    elements.forEach((element) => {
+      element.classList.remove("opacity-0");
+      element.classList.remove("translate-y-10");
+      element.classList.remove("-translate-y-10");
+      element.classList.remove("translate-x-12");
+      element.classList.remove("-translate-x-12");
+      element.classList.add("opacity-100");
+      element.classList.add("translate-y-0");
+      element.classList.add("translate-x-0");
+    });
+  });
+
+
+
+</script>
+</head>
+
+<body
+  class="max-h-screen w-full  bg-white bg-cover bg-no-repeat font-noto text-neutral-600 transition-colors duration-1000 dark:bg-black dark:text-neutral-400">
+  <header id="main-header"
+    class="fixed left-12 right-0 top-0 z-1000 w-full rounded-tl-3xl bg-neutral-200/0 transition-colors duration-1000 dark:bg-neutral-950/0 md:left-16">
+    <div
+  class="fade opacity-0 transition-opacity ease-in-out duration-[4000ms] flex h-16 w-custom-width content-center items-center justify-between rounded-tl-3xl px-4 text-neutral-500 sm:px-6 lg:px-10 xl:px-12">
+  <a href="/"
+    class="fade opacity-0 transition-opacity ease-in-out duration-[4000ms]  group  z-20 flex items-center space-x-2">
+    <img href="/" id="logo-seduhrasa" src="/images/favicon.png" class="h-8 w-auto" alt="logo-seduhrasa" />
+    <h1 href="/"
+      class="hidden font-dosis text-2xl font-bold hover:text-neutral-950 dark:hover:text-neutral-400 md:flex">
+      SeduhRasa
+    </h1>
+  </a>
+
+  
+
+<nav class="h-full">
+  <ul class="flex h-full items-center justify-start space-x-0 md:space-x-4 lg:justify-between">
+     
+    <li id="home"
+      class="group hidden h-full w-full flex-col items-start justify-center px-4 text-center sm:flex md:flex">
+      
+      <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        href="/" title="Home">
+        Home
+      </a>
+      
+
+      
+      <div class="relative top-2 h-[6%] w-[0%] content-start items-end bg-yellow-500 duration-500 group-hover:w-[100%]">
+      </div>
+    </li>
+    
+    <li id=""
+      class="group hidden h-full w-full flex-col items-start justify-center px-4 text-center sm:flex md:flex">
+      
+      <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        href="/news" title="News">
+        News
+      </a>
+      
+
+      
+      <div class="relative top-2 h-[6%] w-[0%] content-start items-end bg-yellow-500 duration-500 group-hover:w-[100%]">
+      </div>
+    </li>
+    
+    <li id=""
+      class="group hidden h-full w-full flex-col items-start justify-center px-4 text-center sm:flex md:flex">
+      
+      <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        href="/products" title="Products">
+        Products
+      </a>
+      
+
+      
+      <div class="relative top-2 h-[6%] w-[0%] content-start items-end bg-yellow-500 duration-500 group-hover:w-[100%]">
+      </div>
+    </li>
+    
+    <li id=""
+      class="group hidden h-full w-full flex-col items-start justify-center px-4 text-center sm:flex md:flex">
+      
+      <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        href="/gallery" title="Gallery">
+        Gallery
+      </a>
+      
+
+      
+      <div class="relative top-2 h-[6%] w-[0%] content-start items-end bg-yellow-500 duration-500 group-hover:w-[100%]">
+      </div>
+    </li>
+    
+
+      
+    <li id="toggle_dark"
+      class="group flex h-full w-full cursor-pointer flex-col items-start justify-center px-1 text-center sm:px-2 md:px-4">
+      <div class="flex transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        title="dark_mode">
+        <span id="text_darkmode"
+          class="material-symbols-rounded flex text-3xl fade opacity-0 transition-opacity ease-in-out duration-[4000ms] ">dark_mode</span>
+      </div>
+    </li>
+       
+
+        
+    <li id="icon_menu"
+      class="group flex h-full w-full cursor-pointer flex-col items-start justify-center px-2 text-center sm:hidden md:hidden md:px-4">
+      <div class="flex transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+        title="widgets">
+        <span class="material-symbols-rounded flex text-3xl">widgets</span>
+      </div>
+    </li>
+     
+  </ul>
+
+  <div id="popupmenu"
+    class="absolute right-20 top-16 hidden rounded-md bg-neutral-200/90 p-2 shadow-md backdrop-blur-md dark:bg-neutral-800/90">
+    <ul class="flex h-full w-full flex-col items-center justify-start md:justify-center md:space-y-2">
+       
+      <li id="home"
+        class="group flex h-full w-full flex-col items-start justify-center px-10 py-2 text-center">
+        
+        <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+          href="/" title="Home">
+          Home
+        </a>
+        
+      </li>
+      
+      <li id=""
+        class="group flex h-full w-full flex-col items-start justify-center px-10 py-2 text-center">
+        
+        <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+          href="/news" title="News">
+          News
+        </a>
+        
+      </li>
+      
+      <li id=""
+        class="group flex h-full w-full flex-col items-start justify-center px-10 py-2 text-center">
+        
+        <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+          href="/products" title="Products">
+          Products
+        </a>
+        
+      </li>
+      
+      <li id=""
+        class="group flex h-full w-full flex-col items-start justify-center px-10 py-2 text-center">
+        
+        <a class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"
+          href="/gallery" title="Gallery">
+          Gallery
+        </a>
+        
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</div>
+  </header>
+  <main
+    class="relative left-12 top-0 h-screen w-[calc(100%-3rem)] py-20 rounded-l-3xl overflow-style-y overflow-y-auto overflow-x-hidden overscroll-none bg-neutral-200 transition-colors duration-1000 dark:bg-neutral-950/90 md:left-16 md:w-[calc(100%-4rem)]">
+    <div class="bar-of-progress z-1500" id="progress-bar">
+      <div class="glow"></div>
+    </div>
+    <div
+  class="fade opacity-0 transition-opacity ease-in-out duration-[4000ms] fixed left-0 top-0 flex h-full w-12 flex-col items-center justify-center md:w-16">
+  <nav
+    class="flex flex-col divide-y divide-neutral-400 dark:divide-neutral-800 transition-colors  duration-1000  justify-center items-center">
+    <ul class="flex flex-col gap-y-4 py-8">
+      
+      <li class="group flex items-center justify-center">
+        <a href="/products/hotdrink" title="Hot Drink">
+          
+          
+          <span
+            class="material-symbols-rounded transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500">coffee</span>
+          
+        </a>
+      </li>
+      
+      <li class="group flex items-center justify-center">
+        <a href="/products/cooldrink" title="Cool Drink">
+          
+          
+          <span class="transition-colors duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M13.815 3.579a1 1 0 0 0-1.63-1.158l-1 1.409a1 1 0 0 0-.098.17H7.5A1.5 1.5 0 0 0 6 5.5V7l.003.084A1.5 1.5 0 0 0 5 8.5V10a1 1 0 0 0 .995 1l.92 9.2a2 2 0 0 0 1.99 1.8h6.19a2 2 0 0 0 1.99-1.8l.92-9.2A1 1 0 0 0 19 10V8.5a1.5 1.5 0 0 0-1.003-1.416L18 7V5.5A1.5 1.5 0 0 0 16.5 4h-2.983zM8 7V6h8v1z"/></g></svg></span>
+          
+        </a>
+      </li>
+      
+      <li class="group flex items-center justify-center">
+        <a href="/products/food" title="Foods">
+          
+          
+          <span class="transition-colors duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 256 256"><path fill="currentColor" d="M224 104h-8.37a88 88 0 0 0-175.26 0H32a8 8 0 0 0-8 8a104.35 104.35 0 0 0 56 92.28V208a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-3.72A104.35 104.35 0 0 0 232 112a8 8 0 0 0-8-8m-50.52-47.77q2.75 2.25 5.27 4.75a87.92 87.92 0 0 0-49.15 43h-29.5A72.26 72.26 0 0 1 168 56c1.83 0 3.66.09 5.48.23M148.12 104a71.84 71.84 0 0 1 41.27-29.57A71.45 71.45 0 0 1 199.54 104ZM128 40a72 72 0 0 1 19 2.57A88.36 88.36 0 0 0 83.33 104H56.46A72.08 72.08 0 0 1 128 40"/></svg></span>
+          
+        </a>
+      </li>
+      
+      <li class="group flex items-center justify-center">
+        <a href="/products/promotions" title="Discount">
+          
+          
+          <span
+            class="material-symbols-rounded transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500">sell</span>
+          
+        </a>
+      </li>
+      
+    </ul>
+
+
+    <ul class="flex flex-col gap-y-4 py-8">
+      
+      <li class="group flex items-center justify-center">
+        <a href="https://facebook.com" title="facebook" target="_blank">
+          
+          
+          <span class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></span>
+          
+        </a>
+      </li>
+      
+      <li class="group flex items-center justify-center">
+        <a href="https://instagram.com" title="instagram" target="_blank">
+          
+          
+          <span class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"/></svg></span>
+          
+        </a>
+      </li>
+      
+      <li class="group flex items-center justify-center">
+        <a href="https://x.com" title="x" target="_blank">
+          
+          
+          <span class="transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"><svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></span>
+          
+        </a>
+      </li>
+      
+    </ul>
+
+
+    <ul class="hidden flex-col gap-y-4 py-8">
+      
+      <li class="group flex items-center justify-center">
+        <a href="/" title="Setting">
+          
+          
+          <span
+            class="material-icons transition-all duration-1000 group-hover:text-yellow-600 dark:group-hover:text-yellow-500">settings</span>
+          
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</div> 
+
+<div
+    class="absolute listtag top-32 blur-3xl opacity-70 dark:opacity-40 flex w-full flex-col items-center justify-center space-y-2 text-center">
+    
+</div>
+
+<div
+    class="flex h-fit w-full flex-col items-center justify-start space-y-6 bg-neutral-200 px-4 pb-12 transition-colors duration-1000 dark:bg-neutral-900 sm:px-6 md:space-y-6 lg:px-10 xl:px-12">
+
+    <div class="flex z-10 w-full flex-col items-center justify-center space-y-2 text-center">
+        
+        <h1 class="text-4xl font-black">Tag: </h1>
+
+        <h2 class="text-2xl font-semibold mt-6">Related News:</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <h2 class="text-2xl font-semibold mt-6">Related Products:</h2>
+        
+        
+        
+
+    </div>
+
+</div>
+
+
+<div
+    class="flex h-fit w-full flex-col items-center justify-start space-y-6 bg-neutral-200 px-4 pb-12 transition-colors duration-1000 dark:bg-neutral-900 sm:px-6 md:space-y-6 lg:px-10 xl:px-12">
+
+    <div class="flex z-10 w-full flex-col items-center justify-center space-y-2 text-center">
+        
+        <h1 class="text-4xl font-black">Tag: </h1>
+
+        <h2 class="text-2xl font-semibold mt-6">Related News:</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <h2 class="text-2xl font-semibold mt-6">Related Products:</h2>
+        
+        
+        
+
+    </div>
+
+</div>
+
+
+
+
+  </main>
+  <footer id="main-footer"
+    class="fixed bottom-0 left-12 w-full h-10 z-1000  rounded-bl-3xl bg-neutral-200 py-2 pl-4 transition-colors duration-1000 dark:bg-neutral-950/90 backdrop-blur-sm  md:left-16 md:pl-12">
+    <div class="opacity-0 sm:opacity-100">&copy; Copyright 2024. All rights reserved.</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".carousel-image");
+    let currentIndex = 0;
+
+    function changeImage() {
+      if (images.length > 0) {
+        images.forEach((img, index) => {
+          img.style.display = index === currentIndex ? "block" : "none";
+        });
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+    }
+
+    
+    setInterval(changeImage, 4000);
+
+    
+    changeImage();
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = document.querySelectorAll(".testimonial-item");
+    let currentIndex = 0;
+    const totalItems = testimonials.length;
+    const itemsPerBatch = 2; 
+    const intervalTime = 5000; 
+
+    function showTestimonials(startIndex) {
+      
+      testimonials.forEach((item) => item.classList.add("hidden"));
+
+      
+      for (let i = 0; i < itemsPerBatch; i++) {
+        const index = (startIndex + i) % totalItems; 
+        testimonials[index].classList.remove("hidden");
+      }
+    }
+
+    function nextTestimonials() {
+      currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+      showTestimonials(currentIndex);
+    }
+
+    
+    showTestimonials(currentIndex);
+
+    
+    setInterval(nextTestimonials, intervalTime);
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const iconMenu = document.getElementById("icon_menu");
+    const popupMenu = document.getElementById("popupmenu");
+
+    
+    function togglePopupMenu(event) {
+      
+      event.stopPropagation();
+
+      
+      popupMenu.classList.toggle("flex");
+      popupMenu.classList.toggle("hidden");
+    }
+
+    
+    function hidePopupMenu() {
+      if (popupMenu.classList.contains("flex")) {
+        popupMenu.classList.remove("flex");
+        popupMenu.classList.add("hidden");
+      }
+    }
+
+    
+    iconMenu.addEventListener("click", togglePopupMenu);
+
+    
+    document.addEventListener("click", hidePopupMenu);
+
+    
+    popupMenu.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<script>
+  
+  const draggables = document.querySelectorAll('[id^="draggable-box-"]');
+
+  
+  draggables.forEach((draggable) => {
+    draggable.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", e.target.id);
+    });
+  });
+
+  
+  const dropZone = document.querySelector(".drop-zone");
+
+  
+  dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+  });
+
+  
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    const id = e.dataTransfer.getData("text"); 
+    const draggableElement = document.getElementById(id); 
+    dropZone.appendChild(draggableElement); 
+  });
+</script>
+<script>
+  window.addEventListener('resize', function () {
+    document.body.style.width = window.innerWidth + 'px';
+  });
+  window.addEventListener('load', function () {
+    document.body.offsetHeight;
+  });
+</script>
+
+
+<script>
+  
+  function handleScroll() {
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer')
+    const mainElement = document.querySelector('main');
+    const scrollTop = mainElement.scrollTop || document.body.scrollTop; 
+
+    console.log("Scroll Y:", scrollTop); 
+
+    
+    if (scrollTop > 10) {
+      header.classList.add('bg-neutral-200', 'dark:bg-neutral-950/90', 'backdrop-blur-sm');
+      header.classList.remove('bg-neutral-200/0', 'dark:bg-neutral-950/0');
+
+    } else {
+      header.classList.remove('bg-neutral-200', 'dark:bg-neutral-950/90', 'backdrop-blur-sm');
+      header.classList.add('bg-neutral-200/0', 'dark:bg-neutral-950/0');
+
+    }
+  }
+
+  
+  document.querySelector('main').addEventListener('scroll', handleScroll);
+
+  
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const path = window.location.pathname;
+
+    
+    const cooldrinkDiv = document.querySelector('.cooldrink');
+    const foodDiv = document.querySelector('.food');
+    const hotdrinkDiv = document.querySelector('.hotdrink');
+    const cooldrinknoDiv = document.querySelector('.cooldrinkno');
+    const foodnoDiv = document.querySelector('.foodno');
+    const hotdrinknoDiv = document.querySelector('.hotdrinkno');
+    const promonoDiv = document.querySelector('.promono');
+    const promoDiv = document.querySelector('.promohide');
+    
+    if (path.includes('/products/hotdrink/')) {
+      cooldrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      hotdrinknoDiv.classList.add('hidden');
+      hotdrinkDiv.classList.remove('hidden');
+    } else if (path.includes('/products/cooldrink/')) {
+      hotdrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      cooldrinknoDiv.classList.add('hidden');
+      cooldrinkDiv.classList.remove('hidden');
+    } else if (path.includes('/products/food/')) {
+      cooldrinkDiv.classList.add('hidden');
+      hotdrinkDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      foodnoDiv.classList.add('hidden');
+      foodDiv.classList.remove('hidden');
+    } else if (path.includes('/products/promotions/')) {
+      cooldrinkDiv.classList.add('hidden');
+      hotdrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promonoDiv.classList.add('hidden');
+      promoDiv.classList.remove('hidden');
+      promoDiv.classList.add('flex');
+    } else if (path.includes('/products/')) {
+      cooldrinkDiv.classList.remove('hidden');
+      foodDiv.classList.remove('hidden');
+      hotdrinkDiv.classList.remove('hidden');
+      cooldrinkDiv.classList.add('flex');
+      foodDiv.classList.add('flex');
+      hotdrinkDiv.classList.add('flex');
+      cooldrinknoDiv.classList.remove('hidden');
+      foodnoDiv.classList.remove('hidden');
+      hotdrinknoDiv.classList.remove('hidden');
+      cooldrinknoDiv.classList.add('flex');
+      foodnoDiv.classList.add('flex');
+      hotdrinknoDiv.classList.add('flex');
+      promoDiv.classList.add('hidden');
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.linkwa').addEventListener('click', function () {
+      window.open('https://wa.me/62895605958708?text=Hello,%20I%20am%20interested%20in%20your%20product%20food%20https://wahidhasyim02.github.io\/tags\/food\/');
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('btn-wa').addEventListener('click', function () {
+      window.location.href = 'https://wa.me/62895605958708?text=Hello,%20I%20am%20interested%20in%20your%20product%20food%20https://wahidhasyim02.github.io\/tags\/food\/';
+    });
+  });
+</script>
+
+
+<script>
+  
+  document.querySelectorAll('.btn-buy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      
+      document.getElementById('paymentPopup').classList.remove('hidden');
+      document.getElementById('paymentPopup').classList.add('flex');
+    });
+  });
+
+  
+  document.getElementById('btn-cancelpay').addEventListener('click', function () {
+    document.getElementById('paymentPopup').classList.remove('flex');
+    document.getElementById('paymentPopup').classList.add('hidden');
+  });
+
+  
+  document.getElementById('btn-pay').addEventListener('click', function () {
+    var paymentMethod = document.getElementById('paymentMethod').value;
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var address = document.getElementById('address').value;
+    var url = document.getElementById('url').innerText; 
+
+    
+    if (!paymentMethod || !name || !phone || !address) {
+      alert('Please fill in all the details');
+      return;
+    }
+
+    
+    var payButton = document.getElementById('btn-pay');
+    payButton.disabled = true;
+
+    payButton.classList.remove('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
+    payButton.classList.add('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+
+    
+    var mailtoLink = `mailto:wahidhasyim46@gmail.com?subject=Payment%20Confirmation&body=Payment%20Method:%20${paymentMethod}%0AName:%20${name}%0APhone:%20${phone}%0AAddress:%20${address}%0AProduct%20URL:%20${url}%0A%0A*Please attach proof of payment in your email.*`;
+
+    
+    setTimeout(function () {
+      
+      window.location.href = mailtoLink;
+
+      
+      document.getElementById('paymentPopup').classList.remove('flex');
+      document.getElementById('paymentPopup').classList.add('hidden');
+
+      
+
+      payButton.disabled = false;
+      payButton.classList.remove('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+      payButton.classList.add('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
+
+    }, 2000); 
+  });
+</script>
+
+
+
+
+<script>
+  
+  document.querySelectorAll('.btn-buy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      
+      document.getElementById('paymentPopup').classList.remove('hidden');
+      document.getElementById('paymentPopup').classList.add('flex');
+    });
+  });
+
+  
+  document.getElementById('btn-cancelpay').addEventListener('click', function () {
+    document.getElementById('paymentPopup').classList.remove('flex');
+    document.getElementById('paymentPopup').classList.add('hidden');
+  });
+</script>
+
+<script>
+  
+  document.getElementById('phone').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^0-9]/g, ''); 
+  });
+
+  
+  document.getElementById('btn-pay').addEventListener('click', function (e) {
+    var phone = document.getElementById('phone').value;
+    var name = document.getElementById('name').value; 
+    var address = document.getElementById('address').value; 
+    var errorMessage = document.getElementById('phone-error');
+    var phoneInput = document.getElementById('phone');
+    var nameInput = document.getElementById('name'); 
+    var addressInput = document.getElementById('address'); 
+
+    
+    phoneInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+    nameInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+    addressInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+
+    
+    if (!/^\d+$/.test(phone)) {
+      phoneInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    
+    if (name.trim() === '') {
+      nameInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    if (address.trim() === '') {
+      addressInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    
+    if (/^\d+$/.test(phone) && name.trim() !== '' && address.trim() !== '') {
+      errorMessage.classList.add('hidden'); 
+    }
+  });
+</script>
+
+
+<script>
+  function copyToClipboard(id) {
+    
+    const number = document.getElementById(id).innerText;
+
+    
+    const tempInput = document.createElement('input');
+    tempInput.value = number;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    
+    alert('Nomor disalin: ' + number);
+  }
+</script>
+
+
+
+
+
+<script>
+  document.getElementById('paymentMethod').addEventListener('change', function () {
+    var selectedValue = this.value;
+    console.log(selectedValue); 
+
+    
+    document.getElementById('viabank').classList.add('hidden');
+    document.getElementById('viacard').classList.add('hidden');
+    document.getElementById('viaewallet').classList.add('hidden');
+
+    
+    if (selectedValue === 'Bank') {
+      document.getElementById('viabank').classList.remove('hidden');
+
+      document.getElementById('viabank').classList.add('block');
+    } else if (selectedValue === 'Credit-card') {
+      document.getElementById('viacard').classList.remove('hidden');
+      document.getElementById('viacard').classList.add('block');
+    } else if (selectedValue === 'E-wallet') {
+      document.getElementById('viaewallet').classList.remove('hidden');
+      document.getElementById('viaewallet').classList.add('block');
+    }
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    function setupProductSlider(productClass, itemsPerBatch, intervalTime) {
+      const productItems = document.querySelectorAll(productClass);
+      let currentIndex = 0;
+      const totalItems = productItems.length;
+
+      function showProduct(startIndex) {
+        productItems.forEach((item) => item.classList.add("hidden"));
+        for (let i = 0; i < itemsPerBatch; i++) {
+          const index = (startIndex + i) % totalItems;
+          productItems[index].classList.remove("hidden");
+        }
+      }
+
+      function nextProduct() {
+        currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+        showProduct(currentIndex);
+      }
+
+      showProduct(currentIndex);
+      setInterval(nextProduct, intervalTime);
+    }
+
+    
+    setupProductSlider(".product-hotdrink", 1, 6000); 
+    setupProductSlider(".product-cooldrink", 1, 10000); 
+    setupProductSlider(".product-food", 1, 15000); 
+  });
+</script>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
