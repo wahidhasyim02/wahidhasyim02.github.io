@@ -469,7 +469,7 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
                 </p>
             </button>
             <button
-                onclick="window.location.href='https://wa.me/62895605958708?text=Hello,%20I%20am%20interested%20in%20your%20product%20wedang-jahe%20https://wahidhasyim02.github.io\/products\/hotdrink\/wedangjahe\/';"
+                onclick="window.location.href='https://wa.me/62895605958708?text=Hello,%20I%20am%20interested%20in%20your%20product%20wedang-jahe%20https://weha.my.id\/products\/hotdrink\/wedangjahe\/';"
                 class="group flex w-full items-center justify-between rounded-md bg-green-500 px-4 py-2 text-center text-lg text-white shadow-lg hover:bg-green-600 hover:text-white dark:bg-green-600 dark:hover:bg-green-500">
                 <span class="whitespace-nowrap overflow-hidden text-ellipsis pr-2">
                     Order via WhatsApp
@@ -509,145 +509,154 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
 
 
     
-    <div id="paymentPopup" class="fixed z-1000 inset-0 mx-4 p-4 justify-center items-center hidden">
+    <div id="paymentPopup"
+        class="fixed z-1000 rounded-md inset-0 mx-4 md:mx-0 md:mr-4 p-4 justify-center items-center hidden">
         
         <div
-            class="bg-white h-[90%] overflow-style-y overflow-y-auto overflow-x-hidden overscroll-auto dark:bg-neutral-800 p-8 rounded shadow-lg max-w-lg w-full">
-            
-            <h2 class="text-2xl font-bold mb-4">Confirm Your Payment</h2>
-
-            
-            <div class="mb-4 w-full">
-                <p><strong>Product: </strong>Wedang Jahe</p>
-                <p><strong>Url: </strong><span class="break-words" id="url">https://wahidhasyim02.github.io/products/hotdrink/wedangjahe/</span></p>
-                <p><strong>Quantity: </strong>1</p>
-                <p><strong>Total Price: </strong>$1.1</p>
-            </div>
-            <div class="flex flex-col gap-2">
+            class="p-[1px] rounded-md bg-gradient-to-tr from-white/0 via-neutral-300 via-30% to-neutral-200 dark:bg-gradient-to-tr dark:from-neutral-950/0  dark:from-30% dark:to-neutral-800">
+            <div
+                class="h-[90%] rounded-md overflow-style-y overflow-y-auto overflow-x-hidden overscroll-auto p-8 shadow-lg max-w-lg w-full backdrop-blur-md transition-colors duration-1000 bg-gradient-to-tr from-white to-white dark:bg-gradient-to-tr dark:from-neutral-950  dark:via-neutral-950 dark:via-40% dark:to-neutral-900">
                 
-                <label class="relative block">
-                    <span class="sr-only">Payment Methods</span>
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                        <span class="material-symbols-rounded">payments</span>
-                    </span>
-                    <select id="paymentMethod"
-                        class="block w-full rounded-md border border-neutral-400 bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800">
-                        <option value="">Select Payment Method</option>
-                        <option value="Bank">Bank Transfer</option>
-                        <option value="Credit-card">Credit Card</option>
-                        <option value="E-wallet">E-Wallet</option>
-                    </select>
-                </label>
-
-                <div id="viabank"
-                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong> jam
-                        <strong>08.00-16.00</strong>
-                    </p>
-                    <div
-                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                        <img src="/images/bca.png" class="h-full object-cover" alt="">
-                    </div>
-                    <div
-                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                        <h3 id="rekening-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                            000 001 001</h3>
-                        <button onclick="copyToClipboard('rekening-number')"
-                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                    </div>
-                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                </div>
-                <div id="viacard"
-                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong> jam
-                        <strong>08.00-16.00</strong>
-                    </p>
-                    <div
-                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                        <img src="/images/card.png" class="h-full object-cover" alt="">
-                    </div>
-                    <div
-                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                        <h3 id="credit-card-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                            000 001 002</h3>
-                        <button onclick="copyToClipboard('credit-card-number')"
-                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                    </div>
-                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                </div>
-
-                <div id="viaewallet"
-                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong> jam
-                        <strong>08.00-16.00</strong>
-                    </p>
-                    <div
-                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                        <img src="/images/gopay.png" class="h-full object-cover" alt="">
-                    </div>
-                    <div
-                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                        <h3 id="e-wallet-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                            000 001 003</h3>
-                        <button onclick="copyToClipboard('e-wallet-number')"
-                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                    </div>
-                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                </div>
-
-
+                <h2 class="text-2xl font-bold mb-4">Confirm Your Payment</h2>
 
                 
-                <label class="relative block ">
-                    <span class="sr-only">Name</span>
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                        <span class="material-symbols-rounded">person</span>
-                    </span>
-                    <input id="name"
-                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                        placeholder="Enter your name" type="text" name="name" />
-                </label>
-                <label class="relative block ">
-                    <span class="sr-only">Phone</span>
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                        <span class="material-symbols-rounded">smartphone</span>
-                    </span>
-                    <input id="phone"
-                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                        placeholder="Enter your phone number" type="tel" inputmode="numeric" pattern="[0-9]*"
-                        name="phone" />
+                <div class="mb-4 w-full">
+                    <p><strong>Product: </strong>Wedang Jahe</p>
+                    <p><strong>Url: </strong><span class="break-words" id="url">https://weha.my.id/products/hotdrink/wedangjahe/</span></p>
+                    <p><strong>Quantity: </strong>1</p>
+                    <p><strong>Total Price: </strong>$1.1</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    
+                    <label class="relative block">
+                        <span class="sr-only">Payment Methods</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <span class="material-symbols-rounded">payments</span>
+                        </span>
+                        <select id="paymentMethod"
+                            class="block w-full rounded-md border border-neutral-400 bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800">
+                            <option value="">Select Payment Method</option>
+                            <option value="Bank">Bank Transfer</option>
+                            <option value="Credit-card">Credit Card</option>
+                            <option value="E-wallet">E-Wallet</option>
+                        </select>
+                    </label>
 
-                </label>
-                <label class="relative block ">
-                    <span class="sr-only">Address</span>
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                        <span class="material-symbols-rounded">location_on</span>
-                    </span>
-                    <input id="address"
-                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                        placeholder="Enter your address" type="text" name="address" />
-                </label>
+                    <div id="viabank"
+                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                            jam
+                            <strong>08.00-16.00</strong>
+                        </p>
+                        <div
+                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                            <img src="/images/bca.png" class="h-full object-cover" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                            <h3 id="rekening-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                                000 001 001</h3>
+                            <button onclick="copyToClipboard('rekening-number')"
+                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                        </div>
+                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                    </div>
+                    <div id="viacard"
+                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                            jam
+                            <strong>08.00-16.00</strong>
+                        </p>
+                        <div
+                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                            <img src="/images/card.png" class="h-full object-cover" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                            <h3 id="credit-card-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                                000 001 002</h3>
+                            <button onclick="copyToClipboard('credit-card-number')"
+                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                        </div>
+                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                    </div>
+
+                    <div id="viaewallet"
+                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                            jam
+                            <strong>08.00-16.00</strong>
+                        </p>
+                        <div
+                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                            <img src="/images/gopay.png" class="h-full object-cover" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                            <h3 id="e-wallet-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                                000 001 003</h3>
+                            <button onclick="copyToClipboard('e-wallet-number')"
+                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                        </div>
+                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                    </div>
+
+
+
+                    
+                    <label class="relative block ">
+                        <span class="sr-only">Name</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <span class="material-symbols-rounded">person</span>
+                        </span>
+                        <input id="name"
+                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                            placeholder="Enter your name" type="text" name="name" />
+                    </label>
+                    <label class="relative block ">
+                        <span class="sr-only">Phone</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <span class="material-symbols-rounded">smartphone</span>
+                        </span>
+                        <input id="phone"
+                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                            placeholder="Enter your phone number" type="tel" inputmode="numeric" pattern="[0-9]*"
+                            name="phone" />
+
+                    </label>
+                    <label class="relative block ">
+                        <span class="sr-only">Address</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <span class="material-symbols-rounded">location_on</span>
+                        </span>
+                        <input id="address"
+                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                            placeholder="Enter your address" type="text" name="address" />
+                    </label>
+                    
+                    <label for="file" class="block text-sm font-medium text-pink-600 dark:text-pink-500">Please upload
+                        your
+                        payment proof
+                        (e.g., receipt, screenshot)</label>
+
+
+                </div>
                 
-                <label for="file" class="block text-sm font-medium text-pink-600 dark:text-pink-500">Please upload your
-                    payment proof
-                    (e.g., receipt, screenshot)</label>
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-y-3 sm:gap-x-3 mt-6">
 
-
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-y-3 sm:gap-x-3 mt-6">
-
-                <button id="btn-cancelpay" class="group order-last sm:order-first flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-neutral-500 px-4 py-2
+                    <button id="btn-cancelpay" class="group order-last sm:order-first flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-neutral-500 px-4 py-2
                 text-center text-lg text-white shadow-lg hover:bg-neutral-600 dark:bg-neutral-600
                 dark:hover:bg-neutral-500">
-                    Cancel
+                        Cancel
 
-                </button>
-                <button id="btn-pay"
-                    class="group order-first sm:order-last flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-yellow-500 px-4 py-2 text-center text-lg text-neutral-950 shadow-lg hover:bg-yellow-600 hover:text-neutral-950 dark:bg-yellow-600 dark:hover:bg-yellow-500">
-                    Confirm payment
+                    </button>
+                    <button id="btn-pay"
+                        class="group order-first sm:order-last flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-yellow-500 px-4 py-2 text-center text-lg text-neutral-950 shadow-lg hover:bg-yellow-600 hover:text-neutral-950 dark:bg-yellow-600 dark:hover:bg-yellow-500">
+                        Confirm payment
 
-                </button>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -663,7 +672,520 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
     class="fixed bottom-0 left-12 w-full h-10 z-1000  rounded-bl-3xl bg-neutral-200 py-2 pl-4 transition-colors duration-1000 dark:bg-neutral-950/90 backdrop-blur-sm  md:left-16 md:pl-12">
     <div class="opacity-0 sm:opacity-100">&copy; Copyright 2024. All rights reserved.</div>
 
-<script type="text/javascript" src="/css/script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = document.querySelectorAll(".testimonial-item");
+    let currentIndex = 0;
+    const totalItems = testimonials.length;
+    const itemsPerBatch = 2; 
+    const intervalTime = 5000; 
+
+    function showTestimonials(startIndex) {
+      
+      testimonials.forEach((item) => item.classList.add("hidden"));
+
+      
+      for (let i = 0; i < itemsPerBatch; i++) {
+        const index = (startIndex + i) % totalItems; 
+        testimonials[index].classList.remove("hidden");
+      }
+    }
+
+    function nextTestimonials() {
+      currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+      showTestimonials(currentIndex);
+    }
+
+    
+    showTestimonials(currentIndex);
+
+    
+    setInterval(nextTestimonials, intervalTime);
+  });
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const iconMenu = document.getElementById("icon_menu");
+    const popupMenu = document.getElementById("popupmenu");
+
+    
+    function togglePopupMenu(event) {
+      
+      event.stopPropagation();
+
+      
+      popupMenu.classList.toggle("flex");
+      popupMenu.classList.toggle("hidden");
+    }
+
+    
+    function hidePopupMenu() {
+      if (popupMenu.classList.contains("flex")) {
+        popupMenu.classList.remove("flex");
+        popupMenu.classList.add("hidden");
+      }
+    }
+
+    
+    iconMenu.addEventListener("click", togglePopupMenu);
+
+    
+    document.addEventListener("click", hidePopupMenu);
+
+    
+    popupMenu.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<script>
+  
+  const draggables = document.querySelectorAll('[id^="draggable-box-"]');
+
+  
+  draggables.forEach((draggable) => {
+    draggable.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", e.target.id);
+    });
+  });
+
+  
+  const dropZone = document.querySelector(".drop-zone");
+
+  
+  dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+  });
+
+  
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    const id = e.dataTransfer.getData("text"); 
+    const draggableElement = document.getElementById(id); 
+    dropZone.appendChild(draggableElement); 
+  });
+</script>
+<script>
+  window.addEventListener('resize', function () {
+    document.body.style.width = window.innerWidth + 'px';
+  });
+  window.addEventListener('load', function () {
+    document.body.offsetHeight;
+  });
+</script>
+
+
+<script>
+  
+  function handleScroll() {
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer')
+    const mainElement = document.querySelector('main');
+    const scrollTop = mainElement.scrollTop || document.body.scrollTop; 
+
+    console.log("Scroll Y:", scrollTop); 
+
+    
+    if (scrollTop > 10) {
+      header.classList.add('bg-neutral-200', 'dark:bg-neutral-950/90', 'backdrop-blur-sm');
+      header.classList.remove('bg-neutral-200/0', 'dark:bg-neutral-950/0');
+
+    } else {
+      header.classList.remove('bg-neutral-200', 'dark:bg-neutral-950/90', 'backdrop-blur-sm');
+      header.classList.add('bg-neutral-200/0', 'dark:bg-neutral-950/0');
+
+    }
+  }
+
+  
+  document.querySelector('main').addEventListener('scroll', handleScroll);
+
+  
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const path = window.location.pathname;
+
+    
+    const cooldrinkDiv = document.querySelector('.cooldrink');
+    const foodDiv = document.querySelector('.food');
+    const hotdrinkDiv = document.querySelector('.hotdrink');
+    const cooldrinknoDiv = document.querySelector('.cooldrinkno');
+    const foodnoDiv = document.querySelector('.foodno');
+    const hotdrinknoDiv = document.querySelector('.hotdrinkno');
+    const promonoDiv = document.querySelector('.promono');
+    const promoDiv = document.querySelector('.promohide');
+    
+    if (path.includes('/products/hotdrink/')) {
+      cooldrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      hotdrinknoDiv.classList.add('hidden');
+      hotdrinkDiv.classList.remove('hidden');
+    } else if (path.includes('/products/cooldrink/')) {
+      hotdrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      cooldrinknoDiv.classList.add('hidden');
+      cooldrinkDiv.classList.remove('hidden');
+    } else if (path.includes('/products/food/')) {
+      cooldrinkDiv.classList.add('hidden');
+      hotdrinkDiv.classList.add('hidden');
+      promoDiv.classList.add('hidden');
+      foodnoDiv.classList.add('hidden');
+      foodDiv.classList.remove('hidden');
+    } else if (path.includes('/products/promotions/')) {
+      cooldrinkDiv.classList.add('hidden');
+      hotdrinkDiv.classList.add('hidden');
+      foodDiv.classList.add('hidden');
+      promonoDiv.classList.add('hidden');
+      promoDiv.classList.remove('hidden');
+      promoDiv.classList.add('flex');
+    } else if (path.includes('/products/')) {
+      cooldrinkDiv.classList.remove('hidden');
+      foodDiv.classList.remove('hidden');
+      hotdrinkDiv.classList.remove('hidden');
+      cooldrinkDiv.classList.add('flex');
+      foodDiv.classList.add('flex');
+      hotdrinkDiv.classList.add('flex');
+      cooldrinknoDiv.classList.remove('hidden');
+      foodnoDiv.classList.remove('hidden');
+      hotdrinknoDiv.classList.remove('hidden');
+      cooldrinknoDiv.classList.add('flex');
+      foodnoDiv.classList.add('flex');
+      hotdrinknoDiv.classList.add('flex');
+      promoDiv.classList.add('hidden');
+    }
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('btn-wa').addEventListener('click', function () {
+      window.location.href = 'https://wa.me/62895605958708?text=Hello,%20I%20am%20interested%20in%20your%20product%20wedang-jahe%20https://weha.my.id\/products\/hotdrink\/wedangjahe\/';
+    });
+  });
+</script>
+
+
+<script>
+  
+  document.querySelectorAll('.btn-buy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      
+      document.getElementById('paymentPopup').classList.remove('hidden');
+      document.getElementById('paymentPopup').classList.add('flex');
+    });
+  });
+
+  
+  document.getElementById('btn-cancelpay').addEventListener('click', function () {
+    document.getElementById('paymentPopup').classList.remove('flex');
+    document.getElementById('paymentPopup').classList.add('hidden');
+  });
+
+  
+  document.getElementById('btn-pay').addEventListener('click', function () {
+    var paymentMethod = document.getElementById('paymentMethod').value;
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var address = document.getElementById('address').value;
+    var url = document.getElementById('url').innerText; 
+
+    
+    if (!paymentMethod || !name || !phone || !address) {
+      alert('Please fill in all the details');
+      return;
+    }
+
+    
+    var payButton = document.getElementById('btn-pay');
+    payButton.disabled = true;
+
+    payButton.classList.remove('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
+    payButton.classList.add('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+
+    
+    var mailtoLink = `mailto:wahidhasyim46@gmail.com?subject=Payment%20Confirmation&body=Payment%20Method:%20${paymentMethod}%0AName:%20${name}%0APhone:%20${phone}%0AAddress:%20${address}%0AProduct%20URL:%20${url}%0A%0A*Please attach proof of payment in your email.*`;
+
+    
+    setTimeout(function () {
+      
+      window.location.href = mailtoLink;
+
+      
+      document.getElementById('paymentPopup').classList.remove('flex');
+      document.getElementById('paymentPopup').classList.add('hidden');
+
+      
+
+      payButton.disabled = false;
+      payButton.classList.remove('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+      payButton.classList.add('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
+
+    }, 2000); 
+  });
+</script>
+
+
+
+
+<script>
+
+  
+  document.getElementById('btn-contactus').addEventListener('click', function () {
+    var formContactus = document.getElementById('formContactus').value;
+    var nameVisitor = document.getElementById('nameVisitor').value;
+    var emailVisitor = document.getElementById('emailVisitor').value;
+    var messageVisitor = document.getElementById('messageVisitor').value;
+
+
+    
+    if (!nameVisitor || !emailVisitor) {
+      alert('Please fill in all the details');
+      return;
+    }
+
+
+    
+    var mailtoOwner = `mailto:wahidhasyim46@gmail.com
+?subject=Contact%20Us%20-%20Message%20from%20${nameVisitor}
+&body=Name:%20${nameVisitor}%0A
+Email:%20${emailVisitor}%0A
+Message:%20${messageVisitor}`;
+
+    
+    setTimeout(function () {
+      
+      window.location.href = mailtoOwner;
+
+    }, 0); 
+    setTimeout(function () {
+
+      alert('Your message has been successfully sent.');
+    }, 2000); 
+  });
+
+</script>
+
+
+
+
+<script>
+  
+  document.querySelectorAll('.btn-buy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      
+      document.getElementById('paymentPopup').classList.remove('hidden');
+      document.getElementById('paymentPopup').classList.add('flex');
+    });
+  });
+
+  
+  document.getElementById('btn-cancelpay').addEventListener('click', function () {
+    document.getElementById('paymentPopup').classList.remove('flex');
+    document.getElementById('paymentPopup').classList.add('hidden');
+  });
+</script>
+
+<script>
+  
+  document.getElementById('phone').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^0-9]/g, ''); 
+  });
+
+  
+  document.getElementById('btn-pay').addEventListener('click', function (e) {
+    var phone = document.getElementById('phone').value;
+    var name = document.getElementById('name').value; 
+    var address = document.getElementById('address').value; 
+    var errorMessage = document.getElementById('phone-error');
+    var phoneInput = document.getElementById('phone');
+    var nameInput = document.getElementById('name'); 
+    var addressInput = document.getElementById('address'); 
+
+    
+    phoneInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+    nameInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+    addressInput.classList.remove("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+
+    
+    if (!/^\d+$/.test(phone)) {
+      phoneInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    
+    if (name.trim() === '') {
+      nameInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    if (address.trim() === '') {
+      addressInput.classList.add("border-pink-600", "dark:border-pink-500", "placeholder:text-pink-500");
+      e.preventDefault(); 
+    }
+
+    
+    if (/^\d+$/.test(phone) && name.trim() !== '' && address.trim() !== '') {
+      errorMessage.classList.add('hidden'); 
+    }
+  });
+</script>
+
+
+<script>
+  function copyToClipboard(id) {
+    
+    const number = document.getElementById(id).innerText;
+
+    
+    const tempInput = document.createElement('input');
+    tempInput.value = number;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    
+    alert('Nomor disalin: ' + number);
+  }
+</script>
+
+
+
+
+
+<script>
+  document.getElementById('paymentMethod').addEventListener('change', function () {
+    var selectedValue = this.value;
+    console.log(selectedValue); 
+
+    
+    document.getElementById('viabank').classList.add('hidden');
+    document.getElementById('viacard').classList.add('hidden');
+    document.getElementById('viaewallet').classList.add('hidden');
+
+    
+    if (selectedValue === 'Bank') {
+      document.getElementById('viabank').classList.remove('hidden');
+
+      document.getElementById('viabank').classList.add('block');
+    } else if (selectedValue === 'Credit-card') {
+      document.getElementById('viacard').classList.remove('hidden');
+      document.getElementById('viacard').classList.add('block');
+    } else if (selectedValue === 'E-wallet') {
+      document.getElementById('viaewallet').classList.remove('hidden');
+      document.getElementById('viaewallet').classList.add('block');
+    }
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    function setupProductSlider(productClass, itemsPerBatch, intervalTime) {
+      const productItems = document.querySelectorAll(productClass);
+      let currentIndex = 0;
+      const totalItems = productItems.length;
+
+      function showProduct(startIndex) {
+        productItems.forEach((item) => item.classList.add("hidden"));
+        for (let i = 0; i < itemsPerBatch; i++) {
+          const index = (startIndex + i) % totalItems;
+          productItems[index].classList.remove("hidden");
+        }
+      }
+
+      function nextProduct() {
+        currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+        showProduct(currentIndex);
+      }
+
+      showProduct(currentIndex);
+      setInterval(nextProduct, intervalTime);
+    }
+
+    
+    setupProductSlider(".product-hotdrink", 1, 6000); 
+    setupProductSlider(".product-cooldrink", 1, 10000); 
+    setupProductSlider(".product-food", 1, 15000); 
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    function setupProductSlider(productClass, itemsPerBatch, intervalTime) {
+      const productItems = document.querySelectorAll(productClass);
+      let currentIndex = 0;
+      const totalItems = productItems.length;
+
+      function showProduct(startIndex) {
+        productItems.forEach((item) => item.classList.add("hidden"));
+        for (let i = 0; i < itemsPerBatch; i++) {
+          const index = (startIndex + i) % totalItems;
+          productItems[index].classList.remove("hidden");
+        }
+      }
+
+      function nextProduct() {
+        currentIndex = (currentIndex + itemsPerBatch) % totalItems;
+        showProduct(currentIndex);
+      }
+
+      showProduct(currentIndex);
+      setInterval(nextProduct, intervalTime);
+    }
+
+    
+    setupProductSlider(".cool-drink", 1, 9000); 
+    setupProductSlider(".hot-drink", 1, 4000); 
+    setupProductSlider(".food-", 1, 13000); 
+  });
+</script>
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("img-cont");
+    const items = Array.from(container.children);
+
+    
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    
+    const shuffledItems = shuffle(items);
+
+    
+    container.innerHTML = '';
+
+    
+    shuffledItems.forEach(item => {
+      container.appendChild(item);
+    });
+  });
+</script>
   </footer>
 
 
