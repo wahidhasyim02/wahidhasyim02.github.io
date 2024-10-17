@@ -1154,6 +1154,14 @@ input[type="checkbox"]:checked:focus {
   width: 100% !important;
 }
 
+.w-\[90\%\] {
+  width: 90% !important;
+}
+
+.w-\[80\%\] {
+  width: 80% !important;
+}
+
 .max-w-lg {
   max-width: 32rem !important;
 }
@@ -1600,11 +1608,6 @@ input[type="checkbox"]:checked:focus {
 .bg-yellow-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-gradient-to-b {
@@ -2990,6 +2993,11 @@ input[type="checkbox"]:checked:focus {
 
   .md\:w-\[calc\(100\%-4rem\)\] {
     width: calc(100% - 4rem) !important;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
   }
 
   .md\:flex-row {
