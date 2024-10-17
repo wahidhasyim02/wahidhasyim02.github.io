@@ -417,7 +417,7 @@
     
     <a href="/products/cooldrink/" title="Cool Drinks"
         class="flex cursor-pointer h-[500px] w-full flex-col items-center overflow-hidden rounded-xl backdrop-blur-md odd:bg-white/10 even:bg-white/20 dark:odd:bg-neutral-800/20 dark:even:bg-neutral-800/30">
-        <div class="relative h-full w-full overflow-hidden">
+        <div class="relative h-full  w-full overflow-hidden">
             
             <img src="/images/default.webp" alt="Default image" class="h-full w-full rounded-xl object-cover" />
             
@@ -1826,26 +1826,6 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".carousel-image");
-    let currentIndex = 0;
-
-    function changeImage() {
-      if (images.length > 0) {
-        images.forEach((img, index) => {
-          img.style.display = index === currentIndex ? "block" : "none";
-        });
-        currentIndex = (currentIndex + 1) % images.length;
-      }
-    }
-
-    
-    setInterval(changeImage, 4000);
-
-    
-    changeImage();
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
     const testimonials = document.querySelectorAll(".testimonial-item");
     let currentIndex = 0;
     const totalItems = testimonials.length;
@@ -2111,6 +2091,47 @@
 
     }, 2000); 
   });
+</script>
+
+
+
+
+<script>
+
+  
+  document.getElementById('btn-contactus').addEventListener('click', function () {
+    var formContactus = document.getElementById('formContactus').value;
+    var nameVisitor = document.getElementById('nameVisitor').value;
+    var emailVisitor = document.getElementById('emailVisitor').value;
+    var messageVisitor = document.getElementById('messageVisitor').value;
+
+
+    
+    if (!nameVisitor || !emailVisitor) {
+      alert('Please fill in all the details');
+      return;
+    }
+
+
+    
+    var mailtoOwner = `mailto:wahidhasyim46@gmail.com
+?subject=Contact%20Us%20-%20Message%20from%20${nameVisitor}
+&body=Name:%20${nameVisitor}%0A
+Email:%20${emailVisitor}%0A
+Message:%20${messageVisitor}`;
+
+    
+    setTimeout(function () {
+      
+      window.location.href = mailtoOwner;
+
+    }, 0); 
+    setTimeout(function () {
+
+      alert('Your message has been successfully sent.');
+    }, 2000); 
+  });
+
 </script>
 
 
