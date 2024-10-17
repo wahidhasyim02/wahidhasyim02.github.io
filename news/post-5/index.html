@@ -973,7 +973,7 @@
     payButton.disabled = true;
 
     payButton.classList.remove('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
-    payButton.classList.add('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+    payButton.classList.add('bg-neutral-600', 'dark:bg-neutral-800', 'text-neutral-200', 'cursor-not-allowed');
 
     
     var mailtoLink = `mailto:wahidhasyim46@gmail.com?subject=Payment%20Confirmation&body=Payment%20Method:%20${paymentMethod}%0AName:%20${name}%0APhone:%20${phone}%0AAddress:%20${address}%0AProduct%20URL:%20${url}%0A%0A*Please attach proof of payment in your email.*`;
@@ -990,7 +990,7 @@
       
 
       payButton.disabled = false;
-      payButton.classList.remove('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+      payButton.classList.remove('bg-neutral-600', 'dark:bg-neutral-800', 'text-neutral-200', 'cursor-not-allowed');
       payButton.classList.add('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
 
     }, 2000); 

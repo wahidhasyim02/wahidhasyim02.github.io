@@ -507,157 +507,155 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
 
 
     
+    
     <div id="paymentPopup"
-        class="fixed z-1000 rounded-md inset-0 mx-4 md:mx-0 md:mr-4 p-4 justify-center items-center hidden">
-        
+        class="fixed z-1100 items-start top-4 md:top-2 justify-center p-[1px] w-fit mx-auto h-[90%] overflow-style-y overflow-y-auto overflow-x-hidden overscroll-auto  rounded-md bg-gradient-to-tr from-white/0 via-neutral-300 via-30% to-neutral-200 dark:bg-gradient-to-tr dark:from-neutral-950/0  dark:from-30% dark:to-neutral-800 hidden">
         <div
-            class="p-[1px] rounded-md bg-gradient-to-tr from-white/0 via-neutral-300 via-30% to-neutral-200 dark:bg-gradient-to-tr dark:from-neutral-950/0  dark:from-30% dark:to-neutral-800">
-            <div
-                class="h-[90%] rounded-md overflow-style-y overflow-y-auto overflow-x-hidden overscroll-auto p-8 shadow-lg max-w-lg w-full backdrop-blur-md transition-colors duration-1000 bg-gradient-to-tr from-white to-white dark:bg-gradient-to-tr dark:from-neutral-950  dark:via-neutral-950 dark:via-40% dark:to-neutral-900">
+            class="h-full  rounded-md overflow-style-y overflow-y-auto overflow-x-hidden overscroll-auto p-8 shadow-lg max-w-lg w-full backdrop-blur-md transition-colors duration-1000 bg-gradient-to-tr from-white to-white dark:bg-gradient-to-tr dark:from-neutral-950  dark:via-neutral-950 dark:via-40% dark:to-neutral-900">
+            
+            <h2 class="text-2xl font-bold mb-4">Confirm Your Payment</h2>
+
+            
+            <div class="mb-4 w-full">
+                <p><strong>Product: </strong>Ice Cincau</p>
+                <p><strong>Url: </strong><span class="break-words" id="url">https://weha.my.id/products/cooldrink/icecincau/</span></p>
+                <p><strong>Quantity: </strong>1</p>
+                <p><strong>Total Price: </strong>$0.5</p>
+            </div>
+            <div class="flex flex-col gap-2">
                 
-                <h2 class="text-2xl font-bold mb-4">Confirm Your Payment</h2>
+                <label class="relative block">
+                    <span class="sr-only">Payment Methods</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <span class="material-symbols-rounded">payments</span>
+                    </span>
+                    <select id="paymentMethod"
+                        class="block w-full rounded-md border border-neutral-400 bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800">
+                        <option value="">Select Payment Method</option>
+                        <option value="Bank">Bank Transfer</option>
+                        <option value="Credit-card">Credit Card</option>
+                        <option value="E-wallet">E-Wallet</option>
+                    </select>
+                </label>
+
+
+                <div id="viabank"
+                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                        jam
+                        <strong>08.00-16.00</strong>
+                    </p>
+                    <div
+                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                        <img src="/images/bca.png" class="h-full object-cover" alt="">
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                        <h3 id="rekening-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                            000 001 001</h3>
+                        <button onclick="copyToClipboard('rekening-number')"
+                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                    </div>
+                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                </div>
+                <div id="viacard"
+                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                        jam
+                        <strong>08.00-16.00</strong>
+                    </p>
+                    <div
+                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                        <img src="/images/card.png" class="h-full object-cover" alt="">
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                        <h3 id="credit-card-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                            000 001 002</h3>
+                        <button onclick="copyToClipboard('credit-card-number')"
+                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                    </div>
+                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                </div>
+
+                <div id="viaewallet"
+                    class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
+                    <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
+                        jam
+                        <strong>08.00-16.00</strong>
+                    </p>
+                    <div
+                        class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
+                        <img src="/images/gopay.png" class="h-full object-cover" alt="">
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
+                        <h3 id="e-wallet-number" class="text-2xl text-center sm:text-start w-full font-semibold">
+                            000 001 003</h3>
+                        <button onclick="copyToClipboard('e-wallet-number')"
+                            class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+                    </div>
+                    <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
+                </div>
+
+
 
                 
-                <div class="mb-4 w-full">
-                    <p><strong>Product: </strong>Ice Cincau</p>
-                    <p><strong>Url: </strong><span class="break-words" id="url">https://weha.my.id/products/cooldrink/icecincau/</span></p>
-                    <p><strong>Quantity: </strong>1</p>
-                    <p><strong>Total Price: </strong>$0.5</p>
-                </div>
-                <div class="flex flex-col gap-2">
-                    
-                    <label class="relative block">
-                        <span class="sr-only">Payment Methods</span>
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <span class="material-symbols-rounded">payments</span>
-                        </span>
-                        <select id="paymentMethod"
-                            class="block w-full rounded-md border border-neutral-400 bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800">
-                            <option value="">Select Payment Method</option>
-                            <option value="Bank">Bank Transfer</option>
-                            <option value="Credit-card">Credit Card</option>
-                            <option value="E-wallet">E-Wallet</option>
-                        </select>
-                    </label>
+                <label class="relative block ">
+                    <span class="sr-only">Name</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <span class="material-symbols-rounded">person</span>
+                    </span>
+                    <input id="name"
+                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                        placeholder="Enter your name" type="text" name="name" />
+                </label>
+                <label class="relative block ">
+                    <span class="sr-only">Phone</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <span class="material-symbols-rounded">smartphone</span>
+                    </span>
+                    <input id="phone"
+                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                        placeholder="Enter your phone number" type="tel" inputmode="numeric" pattern="[0-9]*"
+                        name="phone" />
 
-                    <div id="viabank"
-                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
-                            jam
-                            <strong>08.00-16.00</strong>
-                        </p>
-                        <div
-                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                            <img src="/images/bca.png" class="h-full object-cover" alt="">
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                            <h3 id="rekening-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                                000 001 001</h3>
-                            <button onclick="copyToClipboard('rekening-number')"
-                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                        </div>
-                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                    </div>
-                    <div id="viacard"
-                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
-                            jam
-                            <strong>08.00-16.00</strong>
-                        </p>
-                        <div
-                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                            <img src="/images/card.png" class="h-full object-cover" alt="">
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                            <h3 id="credit-card-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                                000 001 002</h3>
-                            <button onclick="copyToClipboard('credit-card-number')"
-                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                        </div>
-                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                    </div>
-
-                    <div id="viaewallet"
-                        class="hidden w-full rounded-md border-neutral-400 bg-neutral-200 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-700/30">
-                        <p class="text-sm mb-2">Pembayaran hanya akan dikonfirmasi di hari <strong>Senin-Jum'at</strong>
-                            jam
-                            <strong>08.00-16.00</strong>
-                        </p>
-                        <div
-                            class="h-8 p-1 bg-cover items-center justify-center flex sm:items-start sm:justify-start rounded-md  overflow-hidden">
-                            <img src="/images/gopay.png" class="h-full object-cover" alt="">
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center sm:flex-row sm:items-start sm:space-x-2 px-3 py-1 sm:justify-between w-full rounded-md border border-neutral-400 dark:border-neutral-700">
-                            <h3 id="e-wallet-number" class="text-2xl text-center sm:text-start w-full font-semibold">
-                                000 001 003</h3>
-                            <button onclick="copyToClipboard('e-wallet-number')"
-                                class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
-                        </div>
-                        <h3 class="text-center sm:text-start">a.n. WAHID HASYIM</h3>
-                    </div>
-
-
-
-                    
-                    <label class="relative block ">
-                        <span class="sr-only">Name</span>
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <span class="material-symbols-rounded">person</span>
-                        </span>
-                        <input id="name"
-                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                            placeholder="Enter your name" type="text" name="name" />
-                    </label>
-                    <label class="relative block ">
-                        <span class="sr-only">Phone</span>
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <span class="material-symbols-rounded">smartphone</span>
-                        </span>
-                        <input id="phone"
-                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                            placeholder="Enter your phone number" type="tel" inputmode="numeric" pattern="[0-9]*"
-                            name="phone" />
-
-                    </label>
-                    <label class="relative block ">
-                        <span class="sr-only">Address</span>
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <span class="material-symbols-rounded">location_on</span>
-                        </span>
-                        <input id="address"
-                            class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
-                            placeholder="Enter your address" type="text" name="address" />
-                    </label>
-                    
-                    <label for="file" class="block text-sm font-medium text-pink-600 dark:text-pink-500">Please upload
-                        your
-                        payment proof
-                        (e.g., receipt, screenshot)</label>
-
-
-                </div>
+                </label>
+                <label class="relative block ">
+                    <span class="sr-only">Address</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <span class="material-symbols-rounded">location_on</span>
+                    </span>
+                    <input id="address"
+                        class="block w-full rounded-md border border-neutral-400  bg-neutral-100 py-2 pl-10 pr-3 shadow-sm placeholder:italic placeholder:text-neutral-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-neutral-700 dark:bg-neutral-800"
+                        placeholder="Enter your address" type="text" name="address" />
+                </label>
                 
-                <div
-                    class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-y-3 sm:gap-x-3 mt-6">
+                <label for="file" class="block text-sm font-medium text-pink-600 dark:text-pink-500">Please upload
+                    your
+                    payment proof
+                    (e.g., receipt, screenshot)</label>
 
-                    <button id="btn-cancelpay" class="group order-last sm:order-first flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-neutral-500 px-4 py-2
-                text-center text-lg text-white shadow-lg hover:bg-neutral-600 dark:bg-neutral-600
-                dark:hover:bg-neutral-500">
-                        Cancel
 
-                    </button>
-                    <button id="btn-pay"
-                        class="group order-first sm:order-last flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-yellow-500 px-4 py-2 text-center text-lg text-neutral-950 shadow-lg hover:bg-yellow-600 hover:text-neutral-950 dark:bg-yellow-600 dark:hover:bg-yellow-500">
-                        Confirm payment
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-y-3 sm:gap-x-3 mt-6">
 
-                    </button>
-                </div>
+                <button id="btn-cancelpay" class="group order-last sm:order-first flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-neutral-600 px-4 py-2
+                text-center text-lg text-white shadow-lg hover:bg-neutral-800 dark:bg-neutral-800
+                dark:hover:bg-neutral-700">
+                    Cancel
+
+                </button>
+                <button id="btn-pay"
+                    class="group order-first sm:order-last flex h-fit w-full sm:w-fit items-center justify-center rounded-md bg-yellow-500 px-4 py-2 text-center text-lg text-neutral-950 shadow-lg hover:bg-yellow-600 hover:text-neutral-950 dark:bg-yellow-600 dark:hover:bg-yellow-500">
+                    Confirm payment
+
+                </button>
             </div>
         </div>
     </div>
+
 
 
     <div class="z-10">
@@ -910,7 +908,7 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
     payButton.disabled = true;
 
     payButton.classList.remove('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
-    payButton.classList.add('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+    payButton.classList.add('bg-neutral-600', 'dark:bg-neutral-800', 'text-neutral-200', 'cursor-not-allowed');
 
     
     var mailtoLink = `mailto:wahidhasyim46@gmail.com?subject=Payment%20Confirmation&body=Payment%20Method:%20${paymentMethod}%0AName:%20${name}%0APhone:%20${phone}%0AAddress:%20${address}%0AProduct%20URL:%20${url}%0A%0A*Please attach proof of payment in your email.*`;
@@ -927,7 +925,7 @@ placeat? Officia odit quae nostrum excepturi iure, deserunt soluta in!</p>
       
 
       payButton.disabled = false;
-      payButton.classList.remove('bg-neutral-500', 'dark:bg-neutral-600', 'text-neutral-200', 'hover:bg-neutral-500', 'dark:hover:bg-neutral-600', 'hover:text-neutral-200', 'cursor-not-allowed');
+      payButton.classList.remove('bg-neutral-600', 'dark:bg-neutral-800', 'text-neutral-200', 'cursor-not-allowed');
       payButton.classList.add('bg-yellow-500', 'dark:bg-yellow-600', 'text-neutral-950', 'hover:bg-yellow-600', 'hover:text-neutral-950', 'dark:hover:bg-yellow-500');
 
     }, 2000); 
