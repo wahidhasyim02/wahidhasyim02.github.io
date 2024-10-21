@@ -107,11 +107,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-textshadow"),
-    require("tailwindcss"),
-    require("autoprefixer"),
-  ],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 
   darkMode: "class",
 };
