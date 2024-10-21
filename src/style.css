@@ -588,8 +588,166 @@ video {
   }
 }
 
-.fixed {
-  position: fixed !important;
+button {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.overflow-style-y {
+  overflow-y: auto;
+}
+
+.overflow-style-y::-webkit-scrollbar {
+  width: 6px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.overflow-style-y:is(.dark *)::-webkit-scrollbar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
+
+.overflow-style-y::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.overflow-style-y:is(.dark *)::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.overflow-style-y::-webkit-scrollbar-track {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.overflow-style-y:is(.dark *)::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+}
+
+.overflow-style-y::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  -moz-appearance: none;
+       appearance: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(212 212 212 / var(--tw-ring-opacity));
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:after {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 900;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: "Material Symbols Rounded";
+  content: "\e5ca";
+}
+
+input[type="checkbox"]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
+input[type="checkbox"]:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+input[type="checkbox"]:indeterminate {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+input[type="checkbox"]:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+input[type="checkbox"]:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+}
+
+input[type="checkbox"]:checked:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+}
+
+/* Path 1 (Lingkaran hijau) */
+
+/* Path 2 (Tanda centang putih) */
+
+/* Ketika SVG aktif, animasi mulai berjalan */
+
+#svg-centang {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 50px auto;
+}
+
+/* Lingkaran merah */
+
+/* Garis stroke 1 */
+
+/* Garis stroke 2 */
+
+/* Rotasi garis stroke setelah membesar */
+
+/* Ketika SVG aktif, animasi mulai */
+
+/* Menjaga ukuran SVG */
+
+#svg-x {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 50px auto;
 }
 
 .absolute {
@@ -600,12 +758,12 @@ video {
   position: relative !important;
 }
 
-.bottom-12 {
-  bottom: 3rem !important;
+.bottom-1 {
+  bottom: 0.25rem !important;
 }
 
-.bottom-2 {
-  bottom: 0.5rem !important;
+.bottom-10 {
+  bottom: 2.5rem !important;
 }
 
 .left-0 {
@@ -618,10 +776,6 @@ video {
 
 .z-1000 {
   z-index: 1000 !important;
-}
-
-.m-auto {
-  margin: auto !important;
 }
 
 .flex {
@@ -640,12 +794,12 @@ video {
   height: 250px !important;
 }
 
-.h-full {
-  height: 100% !important;
-}
-
 .h-auto {
   height: auto !important;
+}
+
+.h-full {
+  height: 100% !important;
 }
 
 .w-full {
@@ -660,8 +814,16 @@ video {
   flex-direction: column !important;
 }
 
+.items-start {
+  align-items: flex-start !important;
+}
+
 .items-center {
   align-items: center !important;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
 }
 
 .justify-center {
@@ -685,20 +847,20 @@ video {
   overflow: hidden !important;
 }
 
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden !important;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll !important;
+.overscroll-none {
+  overscroll-behavior: none !important;
 }
 
 .rounded-2xl {
   border-radius: 1rem !important;
-}
-
-.border {
-  border-width: 1px !important;
 }
 
 .bg-white {
@@ -719,8 +881,8 @@ video {
      object-fit: cover !important;
 }
 
-.p-4 {
-  padding: 1rem !important;
+.p-8 {
+  padding: 2rem !important;
 }
 
 .text-center {
@@ -731,9 +893,9 @@ video {
   font-family: Noto Sans, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
 }
 
-.text-3xl {
-  font-size: 1.875rem !important;
-  line-height: 2.25rem !important;
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
 }
 
 .font-semibold {
@@ -807,9 +969,9 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
 }
 
-.dark\:bg-gray-950:is(.dark *) {
+.dark\:bg-gray-900:is(.dark *) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(3 7 18 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity)) !important;
 }
 
 .dark\:text-gray-300:is(.dark *) {
@@ -858,22 +1020,6 @@ video {
 
   .md\:gap-y-0 {
     row-gap: 0px !important;
-  }
-
-  .md\:overflow-x-hidden {
-    overflow-x: hidden !important;
-  }
-
-  .md\:overflow-y-hidden {
-    overflow-y: hidden !important;
-  }
-
-  .md\:p-10 {
-    padding: 2.5rem !important;
-  }
-
-  .md\:p-12 {
-    padding: 3rem !important;
   }
 
   .md\:p-16 {
