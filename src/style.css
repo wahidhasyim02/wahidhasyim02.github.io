@@ -640,12 +640,24 @@ video {
   top: 8rem !important;
 }
 
+.bottom-0 {
+  bottom: 0px !important;
+}
+
 .z-1000 {
   z-index: 1000 !important;
 }
 
+.-z-10 {
+  z-index: -10 !important;
+}
+
 .flex {
   display: flex !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .h-8 {
@@ -694,6 +706,10 @@ video {
 
 .w-full {
   width: 100% !important;
+}
+
+.max-w-full {
+  max-width: 100% !important;
 }
 
 .-translate-y-4 {
@@ -907,6 +923,10 @@ video {
 
   .md\:w-\[400px\] {
     width: 400px !important;
+  }
+
+  .md\:w-full {
+    width: 100% !important;
   }
 
   .md\:-translate-y-0 {

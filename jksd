@@ -1,0 +1,15 @@
+
+    <div class="hidden h-full w-full overflow-hidden  bottom-0 left-0 ">
+        <div
+            class="absolute w-[700px] h-[700px]  bg-cyan-300/30 dark:bg-gray-800/30 rounded-full -top-[350px] -right-[300px] blur-3xl">
+        </div>
+        <div
+            class="absolute w-[500px]  h-[500px] bg-pink-300/40 dark:bg-gray-700/30 rounded-full -bottom-32 left-0 blur-3xl ">
+        </div>
+        <div
+            class="absolute w-[200px]  h-[200px] bg-yellow-300/30 dark:bg-gray-700/30 rounded-full top-10 right-60 blur-3xl ">
+        </div>
+        <div
+            class="absolute w-[200px]  h-[200px] bg-yellow-300/30 dark:bg-gray-700/30 rounded-full top-32 left-60 blur-3xl ">
+        </div>
+    </div>
