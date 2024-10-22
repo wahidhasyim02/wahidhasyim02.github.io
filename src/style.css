@@ -814,16 +814,8 @@ input[type="checkbox"]:checked:focus {
   flex-direction: column !important;
 }
 
-.items-start {
-  align-items: flex-start !important;
-}
-
 .items-center {
   align-items: center !important;
-}
-
-.justify-start {
-  justify-content: flex-start !important;
 }
 
 .justify-center {
